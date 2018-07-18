@@ -3,7 +3,7 @@
 @import "../node_modules/bootswatch/dist/litera/variables";
 @import "../node_modules/bootswatch/dist/litera/bootswatch";
 
-$jumbotron-bg: rgba($primary, .4);
+$jumbotron-bg: lighten($primary, 30);
 
 
 
