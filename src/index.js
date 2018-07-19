@@ -14,6 +14,7 @@ function isMobileDevice() {
 
 document.addEventListener('DOMContentLoaded', () => {
     if (isMobileDevice()) {
+        normal.classList.add('transparent')
         funky.classList.remove("transparent")
     } else {
         nav.addEventListener("mouseenter", event => {
