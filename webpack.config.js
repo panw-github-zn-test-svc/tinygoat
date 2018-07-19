@@ -3,6 +3,7 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+let FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 let pathsToClean = [
     'dist',
@@ -62,6 +63,30 @@ module.exports = {
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
-        new ProgressBarPlugin()
+        new ProgressBarPlugin(),
+        new FaviconsWebpackPlugin({
+            logo: './tiny_goat.png',
+            prefix: 'icons-[hash]/',
+            emitStats: false,
+            statsFilename: 'iconstats-[hash].json',
+            persistentCache: true,
+            inject: true,
+            background: '#fff',
+            // favicon app title (see https://github.com/haydenbleasel/favicons#usage)
+            title: 'Web Application Development & Consulting | tinygoat',
+
+            icons: {
+                android: true,
+                appleIcon: true,
+                appleStartup: true,
+                coast: false,
+                favicons: true,
+                firefox: true,
+                opengraph: true,
+                twitter: true,
+                yandex: false,
+                windows: true
+            }
+        })
     ]
 };
