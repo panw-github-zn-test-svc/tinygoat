@@ -32,24 +32,62 @@
 <div class="navbar navbar-custom navbar-static-top bg-primary">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand text-white" href="/" title="Responsive design code editor for front-end developers."><img
-                    src="img/tiny_goat.svg" class="tinygoat d-inline-block"/> tinygoat</a>
+
+            <a class="navbar-brand text-white d-flex flex-row" href="/" title="Responsive design code editor for front-end developers.">
+                <div class="flex-column">
+                    <div class="tinygoat-img">
+                        <img src="img/tiny_goat.svg" class="tinygoat d-block" />
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <div class="d-flex">
+                            <div class="flex-column  tinygoat-lbl" id="tinygoat-label-1">tinygoat</div>
+                            <div class="flex-column tinygoat-lbl" id="tinygoat-label-funky">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0" class="label">
+
+                                    <!-- Symbol -->
+                                    <symbol id="s-text">
+                                        <text text-anchor="middle"
+                                              x="50%" y="50%" dy=".35em">tinygoat</text>
+                                    </symbol>
+
+                                    <!-- Duplicate symbols -->
+                                    <use xlink:href="#s-text" class="text"
+                                    ></use>
+                                    <use xlink:href="#s-text" class="text"
+                                    ></use>
+                                    <use xlink:href="#s-text" class="text"
+                                    ></use>
+                                    <use xlink:href="#s-text" class="text"
+                                    ></use>
+                                    <use xlink:href="#s-text" class="text"
+                                    ></use>
+
+                                </svg>
+                            </div>
+                    </div>
+                </div>
+
+            </a>
         </div>
     </div>
 </div>
 
 
-<section class="position-relative">
-    <div  id="particles-js" class="position-absolute"></div>
+<section class="position-relative" style="overflow: hidden">
+    <div id="particles-js" class="position-absolute"></div>
     <div class="container py-5 ">
         <div class="col-12">
             <div class="d-flex hero ">
                 <div class=" align-self-center">
-                    <h1 class="animated bounceInLeft display-4 text-primary fw-700">Web Application Development &amp; Consulting</h1>
-                    <h2 class="animated bounceInRight display-4 py-4">We combine the latest technologies with thoughtful engineering to build
+                    <h1 class="animated bounceInLeft display-4 text-primary fw-700">Web Application Development &amp;
+                        Consulting</h1>
+                    <h2 class="animated bounceInRight display-4 py-4">We combine the latest technologies with thoughtful
+                        engineering to build
                         custom solutions for any industry.</h2>
-                    <p><a class="animated bounceInLeft btn btn-danger btn-lg mt-4 " href="#form">GET EXPERT CONSULTING<span class="d-none d-sm-inline"> RIGHT NOW</span> <i
-                            class="d-inline-block pl-2 fas fa-chevron-circle-right"></i></a></p>
+                    <p><a class="animated bounceInLeft btn btn-danger btn-lg mt-4 " href="#form">GET EXPERT
+                        CONSULTING<span class="d-none d-sm-inline"> RIGHT NOW</span> <i
+                                class="d-inline-block pl-2 fas fa-chevron-circle-right"></i></a></p>
                 </div>
             </div>
         </div>
@@ -65,19 +103,21 @@
         </div>
         <div class="row" id="clients">
             <div class="col-md-4 py-2">
-                <img src="https://d33wubrfki0l68.cloudfront.net/40ffce9de604e3b37036c70925c1adc0db3abbf6/34c43/images/uploads/ncstate.png" alt="nc state">
+                <img src="https://d33wubrfki0l68.cloudfront.net/40ffce9de604e3b37036c70925c1adc0db3abbf6/34c43/images/uploads/ncstate.png"
+                     alt="nc state">
             </div>
             <div class="col-md-4 py-2">
-                <img src="https://d33wubrfki0l68.cloudfront.net/6ea81cd7489eebae46edb0f81796646b2262fb86/c54e0/images/uploads/wake-tech-community-college.png" alt="wake tech">
+                <img src="https://d33wubrfki0l68.cloudfront.net/6ea81cd7489eebae46edb0f81796646b2262fb86/c54e0/images/uploads/wake-tech-community-college.png"
+                     alt="wake tech">
             </div>
             <div class="col-md-4 py-2">
-                <img src="https://d33wubrfki0l68.cloudfront.net/0861d68d26afbf133b126d89fc570caf73e0178d/2a63a/images/uploads/freedm.png" />
+                <img src="https://d33wubrfki0l68.cloudfront.net/0861d68d26afbf133b126d89fc570caf73e0178d/2a63a/images/uploads/freedm.png"/>
             </div>
             <div class="col-md-4 py-2">
-                <img src="https://d33wubrfki0l68.cloudfront.net/19ffa1ec94d7f2a03fc76c4d9e4f1660aca291db/52607/images/uploads/popefoundation.png" />
+                <img src="https://d33wubrfki0l68.cloudfront.net/19ffa1ec94d7f2a03fc76c4d9e4f1660aca291db/52607/images/uploads/popefoundation.png"/>
             </div>
             <div class="col-md-4 py-2">
-                <img src="https://d33wubrfki0l68.cloudfront.net/28541e44bc35f985a45c47a46f6d2faf9d00f64b/d3394/images/uploads/raleighmold.png" />
+                <img src="https://d33wubrfki0l68.cloudfront.net/28541e44bc35f985a45c47a46f6d2faf9d00f64b/d3394/images/uploads/raleighmold.png"/>
             </div>
         </div>
     </div>
@@ -99,7 +139,6 @@
 </section>
 
 
-
 <a name="form"></a>
 <section class=" py-5 bg-primary">
     <div class="container">
@@ -109,15 +148,15 @@
                 <form netlify methpd="POST" name="contact">
                     <div class="form-group">
                         <label for="form_name" class="d-block">Name <span class="text-danger">*</span> </label>
-                        <input class="form-control" required name="name" type="text" id="form_name" />
+                        <input class="form-control" required name="name" type="text" id="form_name"/>
                     </div>
                     <div class="form-group">
                         <label for="form_tel" class="d-block">Phone <span class="text-danger">*</span> </label>
-                        <input class="form-control" required name="tel" type="tel" id="form_tel" />
+                        <input class="form-control" required name="tel" type="tel" id="form_tel"/>
                     </div>
                     <div class="form-group">
                         <label for="form_message" class="d-block">Message</label>
-                        <textarea class="form-control"  name="message"  id="form_message"></textarea>
+                        <textarea class="form-control" name="message" id="form_message"></textarea>
                     </div>
                     <div class="form-group">
                         <button class=" btn btn-success " type="submit">Send Message</button>
@@ -129,134 +168,11 @@
 </section>
 
 
+<p>
+</p>
 
 
-
-
-
-
-
-
-
-<style>
-    #particles-js {
-        width: 100%;
-        height: 100%;
-    }
-</style>
-
-<!--<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>-->
 <script src="js/bundle.js"></script>
-
-<script>
-
-    particlesJS("particles-js", {
-        "particles": {
-            "number": {
-                "value": 80,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#adb5bd"
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                }
-            },
-            "opacity": {
-                "value": 0.5,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 3,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#6610f2",
-                "opacity": 0.4,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 6,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "grab"
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "push"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 140,
-                    "line_linked": {
-                        "opacity": 1
-                    }
-                },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "speed": 3
-                },
-                "repulse": {
-                    "distance": 200,
-                    "duration": 0.4
-                },
-                "push": {
-                    "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        },
-        "retina_detect": true
-    });
-
-</script>
 
 </body>
 </html>
