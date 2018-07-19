@@ -1,5 +1,4 @@
 const path = require('path');
-// const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -63,7 +62,6 @@ module.exports = {
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
-        // new ExtractTextPlugin('main.css'),
         new ProgressBarPlugin()
     ]
 };
