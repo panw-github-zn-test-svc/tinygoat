@@ -48,8 +48,8 @@
                     <h1 class="animated bounceInLeft display-2 text-primary fw-700">Web Application Development &amp; Consulting</h1>
                     <h2 class="animated bounceInRight display-4 py-4">We combine the latest technologies with thoughtful engineering to build
                         custom solutions for any industry.</h2>
-                    <a class="animated bounceInLeft btn btn-danger btn-lg mt-4" href="#">GET EXPERT CONSULTING RIGHT NOW <i
-                            class="d-inline-block pl-2 fas fa-chevron-circle-right"></i></a>
+                    <p><a class="animated bounceInLeft btn btn-danger btn-lg mt-4 " href="#form">GET EXPERT CONSULTING RIGHT NOW <i
+                            class="d-inline-block pl-2 fas fa-chevron-circle-right"></i></a></p>
                 </div>
             </div>
         </div>
@@ -59,8 +59,25 @@
 <section class=" py-5 bg-primary">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-white text-center">
-                <h4>Our Clients Love Us</h4>
+            <div class="col-12 text-white">
+                <h4 class="display-4 text-center">Our Clients Love Us</h4>
+            </div>
+        </div>
+        <div class="row" id="clients">
+            <div class="col-md-4 py-2">
+                <img src="https://d33wubrfki0l68.cloudfront.net/40ffce9de604e3b37036c70925c1adc0db3abbf6/34c43/images/uploads/ncstate.png" alt="nc state">
+            </div>
+            <div class="col-md-4 py-2">
+                <img src="https://d33wubrfki0l68.cloudfront.net/6ea81cd7489eebae46edb0f81796646b2262fb86/c54e0/images/uploads/wake-tech-community-college.png" alt="wake tech">
+            </div>
+            <div class="col-md-4 py-2">
+                <img src="https://d33wubrfki0l68.cloudfront.net/0861d68d26afbf133b126d89fc570caf73e0178d/2a63a/images/uploads/freedm.png" />
+            </div>
+            <div class="col-md-4 py-2">
+                <img src="https://d33wubrfki0l68.cloudfront.net/19ffa1ec94d7f2a03fc76c4d9e4f1660aca291db/52607/images/uploads/popefoundation.png" />
+            </div>
+            <div class="col-md-4 py-2">
+                <img src="https://d33wubrfki0l68.cloudfront.net/28541e44bc35f985a45c47a46f6d2faf9d00f64b/d3394/images/uploads/raleighmold.png" />
             </div>
         </div>
     </div>
@@ -69,8 +86,8 @@
 <section class=" ">
     <div class="container py-5">
         <div class="row">
-            <div class="col-12 text-center">
-                <h2>What We Do For You</h2>
+            <div class="col-12">
+                <h2 class="display-4  text-center">What We Do For You</h2>
             </div>
         </div>
         <div class="row">
@@ -80,6 +97,46 @@
         </div>
     </div>
 </section>
+
+
+
+<a name="form"></a>
+<section class=" py-5 bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-white ">
+                <h4 class="display-4 text-center">Get in Touch</h4>
+                <form netlify methpd="POST" name="contact">
+                    <div class="form-group">
+                        <label for="form_name" class="d-block">Name <span class="text-danger">*</span> </label>
+                        <input class="form-control" required name="name" type="text" id="form_name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="form_tel" class="d-block">Phone <span class="text-danger">*</span> </label>
+                        <input class="form-control" required name="tel" type="tel" id="form_tel" />
+                    </div>
+                    <div class="form-group">
+                        <label for="form_message" class="d-block">Message</label>
+                        <textarea class="form-control"  name="message"  id="form_message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class=" btn btn-success " type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
 <style>
     #particles-js {
