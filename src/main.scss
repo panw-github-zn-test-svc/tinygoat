@@ -1,10 +1,10 @@
-
 $primary: #192f42;
 $jumbotron-bg: $primary;
 //$jumbotron-bg: lighten($primary, 30);
 $web-font-path: "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
 $font-family-serif:   'Montserrat', sans-serif;
 $font-family-base: $font-family-serif;
+@import "bootstrap";
 
 body {
   font-feature-settings: "liga";
@@ -13,7 +13,9 @@ body {
   font-weight: 700 !important;
 }
 
-@import "bootstrap";
+#nav {
+  min-width: 170px;
+}
 
 .tinygoat-img {
   width: 45px;
@@ -24,8 +26,8 @@ body {
   position: absolute;
 }
 
-#tinygoat-label-1 {
-  z-index: 3;
+#tinygoat-label-normal {
+  //z-index: 3;
 }
 
 

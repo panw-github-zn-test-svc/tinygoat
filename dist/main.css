@@ -3583,13 +3583,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
-body {
-  -webkit-font-feature-settings: "liga";
-          font-feature-settings: "liga"; }
-
-.fw-700 {
-  font-weight: 700 !important; }
-
 .navbar {
   font-size: 0.875em; }
 
@@ -11051,6 +11044,16 @@ svg.label {
 #tinygoat-label-funky {
   margin: 4px -3px 0 -3px; }
 
+body {
+  -webkit-font-feature-settings: "liga";
+          font-feature-settings: "liga"; }
+
+.fw-700 {
+  font-weight: 700 !important; }
+
+#nav {
+  min-width: 170px; }
+
 .tinygoat-img {
   width: 45px;
   margin-right: 1.25rem; }
@@ -11058,9 +11061,6 @@ svg.label {
 .tinygoat-lbl {
   margin-top: 8px;
   position: absolute; }
-
-#tinygoat-label-1 {
-  z-index: 3; }
 
 .display-2 {
   line-height: 1.1; }
