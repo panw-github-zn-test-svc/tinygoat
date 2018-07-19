@@ -28,25 +28,179 @@
 
 </head>
 <body>
-<section class="jumbotron">
-    <div class="container ">
-        <h1 class="display-1">tinygoat <img src="img/tinygoat.svg" class="tinygoat d-inline-block"/></h1>
-        <h1 class=" display-4">Web Application Development &amp; Consulting</h1>
-        <div class="">
-            <a class=" btn btn-danger btn-lg mt-4" href="#">GET A QUOTE</a>
+
+<div class="navbar navbar-custom navbar-static-top bg-primary">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand text-white" href="/" title="Responsive design code editor for front-end developers."><img
+                    src="img/tinygoat.svg" class="tinygoat d-inline-block"/> tinygoat</a>
+        </div>
+    </div>
+</div>
+
+
+<section class="position-relative">
+    <div  id="particles-js" class="position-absolute"></div>
+    <div class="container py-5 ">
+        <div class="col-12">
+            <div class="d-flex hero ">
+                <div class=" align-self-center">
+                    <h1 class="animated bounceInLeft display-2 text-primary fw-700">Web Application Development &amp; Consulting</h1>
+                    <h2 class="animated bounceInRight display-4 py-4">We combine the latest technologies with thoughtful engineering to build
+                        custom solutions for any industry.</h2>
+                    <a class="animated bounceInLeft btn btn-danger btn-lg mt-4" href="#">GET EXPERT CONSULTING RIGHT NOW <i
+                            class="d-inline-block pl-2 fas fa-chevron-circle-right"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="container">
-    <div class="row">
-        <div class="col-12 py-5">
-            <h2 class="display-4">We combine the latest technologies with thoughtful engineering to build custom solutions for any industry.</h2>
+<section class=" py-5 bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-white text-center">
+                <h4>Our Clients Love Us</h4>
+            </div>
         </div>
     </div>
 </section>
 
+<section class=" ">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>What We Do For You</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4-md">
+                <strong class="text-danger">Strategy &amp; Planning</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #particles-js {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<!--<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>-->
 <script src="js/bundle.js"></script>
-<img src="img/goat.jpg" class="d-none"/>
+
+<script>
+
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#adb5bd"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#6610f2",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "grab"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 140,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+
+</script>
+
+<!--<img src="img/goat.jpg" class="d-none"/>-->
 </body>
 </html>

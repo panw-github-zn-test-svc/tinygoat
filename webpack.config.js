@@ -39,14 +39,15 @@ module.exports = {
                 use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
+                test: /\.(png|jpg|gif|svg|json)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {}
                     }
                 ]
-            }
+            },
+            { test: /\.(woff|woff2|eot|ttf)$/, loader: 'url-loader?limit=100000' }
         ],
     },
     plugins: [

@@ -1,6 +1,44 @@
+
+$primary: #192f42;
+$jumbotron-bg: $primary;
+//$jumbotron-bg: lighten($primary, 30);
+$web-font-path: "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+$font-family-serif:   'Montserrat', sans-serif;
+$font-family-base: $font-family-serif;
+
+body {
+  font-feature-settings: "liga";
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+
 @import "bootstrap";
 
 .tinygoat {
-  max-width: 100px;
-  line-height: 1;
+  max-width: 25px;
+}
+
+.display-2 {
+  line-height: 1.1;
+}
+
+html, body {
+  background-color: $light;
+}
+
+@include  media-breakpoint-down(md) {
+  html,body {
+    font-size: 70%;
+  }
+}
+
+@include  media-breakpoint-down(sm) {
+  html,body {
+    font-size: 50%;
+  }
+}
+
+.hero {
+  height: 80vh;
 }

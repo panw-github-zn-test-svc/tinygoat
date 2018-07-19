@@ -1,12 +1,11 @@
+
+
+
+
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootswatch/dist/litera/variables";
 @import "../node_modules/bootswatch/dist/litera/bootswatch";
-
-$jumbotron-bg: lighten($primary, 30);
-
-
-
 
 
 
@@ -46,4 +45,5 @@ $jumbotron-bg: lighten($primary, 30);
 @import "../node_modules/bootstrap/scss/carousel";
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/print";
-
+@import "../node_modules/animate.css/animate.min.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
