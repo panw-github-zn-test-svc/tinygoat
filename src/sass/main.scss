@@ -1,0 +1,41 @@
+$web-font-path: "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+$font-family-serif:   'Montserrat', sans-serif;
+$font-family-base: $font-family-serif;
+@import "bootstrap";
+
+body {
+  font-feature-settings: "liga";
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+#nav {
+  min-width: 170px;
+}
+
+.tinygoat-img {
+  width: 45px;
+  margin-right: $card-columns-gap;
+}
+.tinygoat-lbl {
+  margin-top: 8px;
+  position: absolute;
+  text-transform: lowercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#clients img {
+  width: 245px;
+  opacity: 0.7;
+}
+
+.description {
+  font-weight: 400;
+}
+
+

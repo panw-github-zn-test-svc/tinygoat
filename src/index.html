@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>tinygoat</title>
+    <base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">
     <meta name="author" content="Web Application Development & Consulting | tinygoat"/>
     <meta name="description"
           content="We combine the latest technologies with thoughtful engineering to build custom solutions for any industry."/>
     <meta name="Copyright" content="tinygoat"/>
 
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@heyitsjohnathan">
+    <meta name="twitter:site" content="@tinygoatdotnet">
     <meta name="twitter:title" content="Web Application Development & Consulting | tinygoat"/>
     <meta name="twitter:description"
           content="We combine the latest technologies with thoughtful engineering to build custom solutions for any industry."/>
@@ -24,8 +25,8 @@
     <meta property="og:image" content="https://image.ibb.co/dQeJmy/goat.jpg"/>
     <meta property="og:type" content="website"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="main.css" rel="stylesheet"/>
 
+    <link rel="stylesheet" href="css/main.css"  />
 
 </head>
 <body>
@@ -100,20 +101,59 @@
     </div>
 </section>
 
-<section class=" ">
-    <div class="container py-5">
+
+
+<div class="features-7 section-image" style="background-image: url('assets/img/bg11.jpg')">
+
+    <div class="col-md-8 mr-auto ml-auto text-center">
+        <h2 class="title">Working is a pleasure</h2>
+        <h4 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h4>
+    </div>
+
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <h2 class="display-4  text-center">What We Do For You</h2>
+            <div class="col-md-6 px-0">
+                <div class="col-sm-12">
+                    <div class="info info-horizontal">
+                        <div class="icon">
+                            <i class="now-ui-icons design-2_html5"></i>
+                        </div>
+                        <div class="description">
+                            <h5 class="info-title">For Developers</h5>
+                            <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                        </div>
+                    </div>
+                    <div class="info info-horizontal">
+                        <div class="icon">
+                            <i class="now-ui-icons design_palette"></i>
+                        </div>
+                        <div class="description">
+                            <h5 class="info-title">For Designers</h5>
+                            <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                        </div>
+                    </div>
+                    <div class="info info-horizontal">
+                        <div class="icon">
+                            <i class="now-ui-icons design-2_ruler-pencil"></i>
+                        </div>
+                        <div class="description">
+                            <h5 class="info-title">For Artists</h5>
+                            <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4-md">
-                <strong class="text-danger">Strategy &amp; Planning</strong>
+
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="assets/img/ipad3.png" alt="">
+                </div>
             </div>
+
         </div>
     </div>
-</section>
+</div>
 
 
 <a name="form"></a>
@@ -144,35 +184,10 @@
     </div>
 </section>
 
+<script defer src="js/manifest.js"></script>
+<script defer src="js/vendor.js"></script>
+<script defer src="js/index.js"></script>
 
-<p>
-</p>
 
-
-<script src="js/bundle.js"></script>
-
-<!--<div class="flex-column tinygoat-lbl d-none d-sm-none d-md-none d-lg-flex transparent" id="tinygoat-label-funky">-->
-<!--<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0" class="label">-->
-
-<!--&lt;!&ndash; Symbol &ndash;&gt;-->
-<!--<symbol id="s-text">-->
-<!--<text text-anchor="middle"-->
-<!--x="50%" y="50%" dy=".35em">tinygoat</text>-->
-<!--</symbol>-->
-
-<!--&lt;!&ndash; Duplicate symbols &ndash;&gt;-->
-<!--<use xlink:href="#s-text" class="text"-->
-<!--&gt;</use>-->
-<!--<use xlink:href="#s-text" class="text"-->
-<!--&gt;</use>-->
-<!--<use xlink:href="#s-text" class="text"-->
-<!--&gt;</use>-->
-<!--<use xlink:href="#s-text" class="text"-->
-<!--&gt;</use>-->
-<!--<use xlink:href="#s-text" class="text"-->
-<!--&gt;</use>-->
-
-<!--</svg>-->
-<!--</div>-->
 </body>
 </html>
