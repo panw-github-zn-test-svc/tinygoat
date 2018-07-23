@@ -11,7 +11,7 @@ mix
     .sourceMaps()
     .sass('./src/sass/main.scss', './dist/css/')
     .options({
-        processCssUrls: true,
+        processCssUrls: false,
         postCss: [
             require('postcss-css-variables')()
         ]
@@ -19,11 +19,11 @@ mix
     .extract([
         'particles.js'
     ])
+
+    .version()
     .purgeCss({
         folders: ['dist']
     })
-
-    .version()
     .browserSync({
         proxy: 'tinygoat.test/dist'
     })
