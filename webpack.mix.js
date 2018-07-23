@@ -4,7 +4,7 @@ require('laravel-mix-purgecss');
 
 mix
     .setPublicPath('./')
-    .copyDirectory('./src/img','./dist/img')
+    .copyDirectory('./src/img', './dist/img')
     .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', './dist/fonts')
     .copy('./src/index.html', './dist/index.html')
     .js('./src/js/index.js', './dist/js/')
@@ -19,16 +19,13 @@ mix
     .extract([
         'particles.js'
     ])
-
-    .version()
     .purgeCss({
         folders: ['dist']
     })
+    .version()
     .browserSync({
         proxy: 'tinygoat.test/dist'
     })
-
-
 
 
 // Full API

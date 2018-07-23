@@ -1,5 +1,5 @@
 
-//$fa-font-path: "../fonts/font-awesome" !default;
+$fa-font-path: "../fonts" !default;
 @import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
@@ -49,8 +49,6 @@ img {
 }
 
 
-
-
 #particles-js {
   width: 100%;
   height: 100%;
@@ -71,3 +69,5 @@ h1,h2,h3,h4,h5,h6 {
 .underline {
   text-decoration: underline !important;
 }
+
+@import "responsive";

@@ -15,7 +15,7 @@ setTimeout(() => {
                 }
             },
             "color": {
-                "value": "#adb5bd"
+                "value": "#6610f2"
             },
             "shape": {
                 "type": "circle",
@@ -28,7 +28,7 @@ setTimeout(() => {
                 }
             },
             "opacity": {
-                "value": 0.5,
+                "value": 0.7,
                 "random": false,
                 "anim": {
                     "enable": false,
@@ -38,12 +38,12 @@ setTimeout(() => {
                 }
             },
             "size": {
-                "value": 3,
+                "value": 5,
                 "random": true,
                 "anim": {
                     "enable": false,
                     "speed": 40,
-                    "size_min": 0.1,
+                    "size_min": 0.2,
                     "sync": false
                 }
             },
@@ -51,7 +51,7 @@ setTimeout(() => {
                 "enable": true,
                 "distance": 150,
                 "color": "#6610f2",
-                "opacity": 0.4,
+                "opacity": 0.5,
                 "width": 1
             },
             "move": {
