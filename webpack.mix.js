@@ -2,14 +2,16 @@ const mix = require('laravel-mix');
 
 require('laravel-mix-purgecss');
 
-mix.setPublicPath('dist')
+mix
+    .setPublicPath('./')
+    .copyDirectory('./src/img','./dist/img')
+    .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', './dist/fonts')
     .copy('./src/index.html', './dist/index.html')
-    .js('src/js/index.js', 'dist/js/')
+    .js('./src/js/index.js', './dist/js/')
     .sourceMaps()
-    .sass('src/sass/main.scss', 'dist/css/')
-    .copyDirectory('src/img','dist/img')
+    .sass('./src/sass/main.scss', './dist/css/')
     .options({
-        processCssUrls: false,
+        processCssUrls: true,
         postCss: [
             require('postcss-css-variables')()
         ]
@@ -23,10 +25,8 @@ mix.setPublicPath('dist')
 
     .version()
     .browserSync({
-        proxy: 'tinygoat.test'
+        proxy: 'tinygoat.test/dist'
     })
-    // .version()
-    // .browserSync(); // Hot reloading
 
 
 

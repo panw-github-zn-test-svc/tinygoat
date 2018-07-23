@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>tinygoat</title>
-    <base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">
     <meta name="author" content="Web Application Development & Consulting | tinygoat"/>
     <meta name="description"
           content="We combine the latest technologies with thoughtful engineering to build custom solutions for any industry."/>
@@ -26,7 +25,8 @@
     <meta property="og:type" content="website"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/main.css"  />
+
+    <link rel="stylesheet" href="css/main.css"/>
 
 </head>
 <body>
@@ -34,36 +34,40 @@
 <div class="navbar navbar-custom navbar-static-top bg-primary">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand text-white d-flex flex-row" href="/" title="Responsive design code editor for front-end developers." id="nav">
+            <a class="navbar-brand text-white d-flex flex-row" href="/"
+               title="Responsive design code editor for front-end developers." id="nav">
                 <div class="flex-column">
                     <div class="tinygoat-img">
-                        <img src="img/tiny_goat.svg" class="tinygoat d-block" />
+                        <img src="img/tiny_goat.svg" class="tinygoat d-block"/>
                     </div>
                 </div>
                 <div class="flex-column">
                     <div class="d-flex">
-                            <div class="flex-column  tinygoat-lbl" id="tinygoat-label-normal">tinygoat</div>
+                        <div class="flex-column h4 tinygoat-lbl" id="tinygoat-label-normal">tinygoat</div>
                     </div>
                 </div>
-
             </a>
         </div>
+        <div class="pull-right"><a href="tel:1-919-584-5646" class="btn btn-warning"><span
+                class="h4">919-584-5646</span></a></div>
     </div>
 </div>
 
 
 <section class="position-relative" style="overflow: hidden">
     <div id="particles-js" class="position-absolute"></div>
-    <div class="container py-5 ">
+    <div class="container">
         <div class="col-12">
             <div class="d-flex hero ">
                 <div class=" align-self-center">
-                    <h1 class="animated bounceInLeft display-4 text-primary fw-700">Web Application Development &amp;
+                    <h1 class="animated bounceInLeft display-4 text-cyan fw-700">Web Application Development &amp;
                         Consulting</h1>
-                    <h2 class="animated bounceInRight display-4 py-4">We combine the latest technologies with thoughtful
+                    <h2 class="animated bounceInRight display-4  text-white-50">We combine the latest technologies with
+                        thoughtful
                         engineering to build
                         custom solutions for any industry.</h2>
-                    <p><a class="animated bounceInLeft btn btn-danger btn-lg mt-4 " href="#form">GET EXPERT
+                    <p class="animated bounceInLeft"><a class="animated pulse infinite btn btn-danger btn-lg "
+                                                        style="animation-duration: 3s" href="#form">GET EXPERT
                         CONSULTING<span class="d-none d-sm-inline"> RIGHT NOW</span> <i
                                 class="d-inline-block pl-2 fas fa-chevron-circle-right"></i></a></p>
                 </div>
@@ -72,117 +76,107 @@
     </div>
 </section>
 
-<section class=" py-5 bg-primary">
+<section class=" pt-4 pb-5 bg-primary">
     <div class="container">
         <div class="row">
             <div class="col-12 text-white">
                 <h4 class="display-4 text-center">Our Clients Love Us</h4>
             </div>
         </div>
+
         <div class="row" id="clients">
-            <div class="col-md-4 py-2">
+            <div class="col-md-3 py-2 text-center">
                 <img src="https://d33wubrfki0l68.cloudfront.net/40ffce9de604e3b37036c70925c1adc0db3abbf6/34c43/images/uploads/ncstate.png"
                      alt="nc state">
             </div>
-            <div class="col-md-4 py-2">
-                <img src="https://d33wubrfki0l68.cloudfront.net/6ea81cd7489eebae46edb0f81796646b2262fb86/c54e0/images/uploads/wake-tech-community-college.png"
+            <div class="col-md-3 py-2 text-center">
+                <img src="img/wake-tech-community-college.png"
                      alt="wake tech">
             </div>
-            <div class="col-md-4 py-2">
+            <div class="col-md-3 py-2 text-center">
                 <img src="https://d33wubrfki0l68.cloudfront.net/0861d68d26afbf133b126d89fc570caf73e0178d/2a63a/images/uploads/freedm.png"/>
             </div>
-            <div class="col-md-4 py-2">
+            <div class="col-md-3 py-2 text-center">
                 <img src="https://d33wubrfki0l68.cloudfront.net/19ffa1ec94d7f2a03fc76c4d9e4f1660aca291db/52607/images/uploads/popefoundation.png"/>
             </div>
-            <div class="col-md-4 py-2">
-                <img src="https://d33wubrfki0l68.cloudfront.net/28541e44bc35f985a45c47a46f6d2faf9d00f64b/d3394/images/uploads/raleighmold.png"/>
-            </div>
         </div>
+
     </div>
 </section>
 
 
+<a name="form"></a>
+<div class="contactus-1 section-image"
+     style="background-image: url('https://images.unsplash.com/photo-1493836692373-ad82dc8644c3')">
 
-<div class="features-7 section-image" style="background-image: url('assets/img/bg11.jpg')">
-
-    <div class="col-md-8 mr-auto ml-auto text-center">
-        <h2 class="title">Working is a pleasure</h2>
-        <h4 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h4>
-    </div>
-
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-md-6 px-0">
-                <div class="col-sm-12">
-                    <div class="info info-horizontal">
-                        <div class="icon">
-                            <i class="now-ui-icons design-2_html5"></i>
-                        </div>
-                        <div class="description">
-                            <h5 class="info-title">For Developers</h5>
-                            <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
-                        </div>
-                    </div>
-                    <div class="info info-horizontal">
-                        <div class="icon">
-                            <i class="now-ui-icons design_palette"></i>
-                        </div>
-                        <div class="description">
-                            <h5 class="info-title">For Designers</h5>
-                            <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
-                        </div>
-                    </div>
-                    <div class="info info-horizontal">
-                        <div class="icon">
-                            <i class="now-ui-icons design-2_ruler-pencil"></i>
-                        </div>
-                        <div class="description">
-                            <h5 class="info-title">For Artists</h5>
-                            <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
-                        </div>
-                    </div>
+            <div class="col-md-5">
+                <h2 class="title">Get in Touch</h2>
+                <h4 class="description">We want to make something amazing, not just a web site, but something that will
+                    make your customers' jaws drop. Please fill out the form or give us a call at <a href="tel:1-919-584-5646" class="text-light underline">919-584-5646</a>.</h4>
+                <div class="info info-horizontal">
+
                 </div>
 
             </div>
+            <div class="col-md-5 ml-auto mr-auto">
+                <div class="card card-contact card-raised">
+                    <form role="form" id="contact-form1" method="post" netlify name="contact">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 pr-2">
+                                    <label class="text-white" for="name">Name</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text pr-3"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" id="name" required class="form-control" placeholder="Name..."
+                                               aria-label="Name..." autocomplete="name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pl-2">
+                                    <div class="form-group">
+                                        <label class="text-white" for="phone">Phone</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text pr-3"><i class="fas fa-phone"></i></span>
+                                            </div>
+                                            <input type="tel" id="phone" required class="form-control"
+                                                   placeholder="Phone..." aria-label="Phone..." autocomplete="tel">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-white" for="email">Email address</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text pr-3"><i class="fas fa-envelope"></i></span>
+                                    </div>
+                                    <input type="email" id="email" required class="form-control"
+                                           placeholder="Email Address..." autocomplete="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-white" for="message">Your message</label>
+                                <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+                            </div>
 
-            <div class="col-md-6">
-                <div class="image-container">
-                    <img src="assets/img/ipad3.png" alt="">
+                            <div class="row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary btn-round">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 
-
-<a name="form"></a>
-<section class=" py-5 bg-primary">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-white ">
-                <h4 class="display-4 text-center">Get in Touch</h4>
-                <form netlify methpd="POST" name="contact">
-                    <div class="form-group">
-                        <label for="form_name" class="d-block">Name <span class="text-danger">*</span> </label>
-                        <input class="form-control" required name="name" type="text" id="form_name"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="form_tel" class="d-block">Phone <span class="text-danger">*</span> </label>
-                        <input class="form-control" required name="tel" type="tel" id="form_tel"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="form_message" class="d-block">Message</label>
-                        <textarea class="form-control" name="message" id="form_message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button class=" btn btn-success " type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
 
 <script defer src="js/manifest.js"></script>
 <script defer src="js/vendor.js"></script>

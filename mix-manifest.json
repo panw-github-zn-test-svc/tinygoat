@@ -1,4 +1,11 @@
 {
-    "/dist/js/index.js": "/dist/js/index.js",
-    "/dist/css/main.css": "/dist/css/main.css"
+    "/dist/js/index.js": "/dist/js/index.js?id=e4de139845c46862ed7b",
+    "/dist/css/main.css": "/dist/css/main.css?id=e5d324a02b654c234cd5",
+    "/dist/js/index.js.map": "/dist/js/index.js.map?id=ae18b6d88c8a85b0f4e7",
+    "/dist/css/main.css.map": "/dist/css/main.css.map?id=f547031846b74d4a6553",
+    "/dist/js/vendor.js": "/dist/js/vendor.js?id=7ddf5f4fcf9dd55ee571",
+    "/dist/js/vendor.js.map": "/dist/js/vendor.js.map?id=ac2a0cb468a3570189cd",
+    "/dist/js/manifest.js": "/dist/js/manifest.js?id=d64713044d4b02b1808b",
+    "/dist/js/manifest.js.map": "/dist/js/manifest.js.map?id=a1fe2f026de8d65b4089",
+    "/dist/index.html": "/dist/index.html?id=a682981280b02570c6f9"
 }
