@@ -6,6 +6,7 @@ mix
     .setPublicPath('./')
     .copyDirectory('./src/img', './dist/img')
     .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', './dist/fonts')
+    .copy('./src/favicon.ico', './dist/favicon.ico')
     .copy('./src/index.html', './dist/index.html')
     .js('./src/js/index.js', './dist/js/')
     .sourceMaps()
