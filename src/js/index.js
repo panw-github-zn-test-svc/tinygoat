@@ -115,9 +115,8 @@ setTimeout(() => {
 
 
 
-
 document.getElementById('expert-btn').addEventListener('click', (e) => {
     e.preventDefault()
-    setTimeout(() => { document.getElementById('name').focus() }, 10)
+    setTimeout(() => {document.getElementById('name').focus()  }, 50)
 })
 
