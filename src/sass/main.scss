@@ -24,10 +24,25 @@ body {
   min-width: 170px;
 }
 
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
 .tinygoat-img {
   width: 45px;
   margin-right: $card-columns-gap;
+  img:hover {
+    animation-name: spin;
+    animation-duration: 2s;
+  }
 }
+
+
 .tinygoat-lbl {
   margin-top: 8px;
   position: absolute;
@@ -37,6 +52,12 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+@include media-breakpoint-down(sm) {
+  #expert-btn {
+    font-size: 14px;
+    padding: 15px 10px;
+  }
 }
 
 #clients img {
